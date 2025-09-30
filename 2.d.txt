@@ -1,0 +1,25 @@
+# 2.d.txt - Resultados Monte Carlo
+# Nota: Gillespie aproximado por tau-leap con dt=0.01 (N=1000)
+# Valores en PORCENTAJE.
+
+ Gillespie (tau-leap) 
+N = 1000
+k = 126
+p_hat = 12.6000 %
+IC frecuentista 95% = [10.5432 %, 14.6568 %]
+Media Bayesiana = 12.6747 %
+Credible interval 95% = [10.6876 %, 14.8028 %]
+
+ SDE Euler-Maruyama 
+N = 1000
+k = 138
+p_hat = 13.8000 %
+IC frecuentista 95% = [11.6623 %, 15.9377 %]
+Media Bayesiana = 13.8723 %
+Credible interval 95% = [11.8026 %, 16.0784 %]
+
+# Discusión (2 frases):
+Con N=1000, la estimación aproximada (tau-leap) es 12.6000% y la SDE da 13.8000%.
+La probabilidad estimada de alcanzar la concentración crítica de Pu es baja,
+aunque existe incertidumbre en torno al valor. El método bayesiano produce
+un resultado coherente con el frecuentista, confirmando la robustez del cálculo.
